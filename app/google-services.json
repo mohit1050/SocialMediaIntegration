@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "544248304599",
+    "project_id": "social-me-27da4",
+    "storage_bucket": "social-me-27da4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544248304599:android:784515aabbf537fff8b192",
+        "android_client_info": {
+          "package_name": "com.example.socialme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544248304599-g9h9va38pnvm16erajf1ch2go12jramo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialme",
+            "certificate_hash": "b9872aa912995bfbf6cd6b22d43988fcb554b8e5"
+          }
+        },
+        {
+          "client_id": "544248304599-p6jvku1jsfohj2014qbaddpdtrt8ei9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPyiUOoDDGJ5HDjjo0Nzl48C5ELXK_PIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544248304599-p6jvku1jsfohj2014qbaddpdtrt8ei9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

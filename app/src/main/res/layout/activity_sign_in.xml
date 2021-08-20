@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity=""
+    android:orientation="vertical"
+    android:padding="60px"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:id="@+id/tvsocialme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/nanum_pen_script_regular"
+        android:text="Social me"
+        android:textAllCaps="false"
+        android:textSize="80dp" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvsocialme"
+        android:layout_marginTop="30dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="16dp"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#66B9F9"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:elevation="10dp" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Forgot your password?"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvConnectWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/socialloginbtn"
+        android:layout_centerHorizontal="true"
+        android:text="-------- or connect with --------"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:id="@+id/socialloginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutsignin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignInWithGoogle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickGoogleButton"
+            android:text="Google"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_google"
+            android:backgroundTint="#B3F44336"
+            app:iconSize="16dp" />
+
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_network_bar">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/btnLoginWithFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Facebook"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCustomFB"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:onClick="onClickFacebookButton"
+                android:text="Facebook"
+                android:backgroundTint="#B33F51B5"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_facebook"
+                app:iconSize="16dp" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDontHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Dont have account?   "
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="#2196F3" />
+    </LinearLayout>
+</RelativeLayout>
